@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#certi">Certificate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 </ul>
             </div>
@@ -83,71 +83,83 @@
     </section>
 
 <!-- Certificate -->
-    <div class="certi" id="certi">
-        <div class="title">
-            <h2 class="text-center">Certificate</h2>
-        </div>
-        <div class="row gap-4" style="margin: 0px 0px 0px 32px;">
-            <div class="card" style="width: 20rem;">
-                <img src="img/sertif1.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div id="certi">
+        <h1 class="sub-title">My Certificate</h1>
+        <div class="container">   
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/sertif1.jpeg">
+                    <div class="layer">
+                        <h3>Peserta Seminar</h3>
+                        <p>Mengikuti seminar dari kominfo</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 20rem;">
-                <img src="img/sertif2.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div> <!-- penutup div yang hilang -->
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/sertif2.jpeg">
+                    <div class="layer">
+                        <h3>Kepanitiaan</h3>
+                        <p>Menjadi koordinator acara dalam kegiatan MUBES Himpunan Mahasiswa Sistem Informasi</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 20rem;">
-                <img src="img/sertif3.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div> <!-- penutup div yang hilang -->
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/sertif3.jpeg">
+                    <div class="layer">
+                        <h3>Courses</h3>
+                        <p>Mengerjakan course yang dibuat Oracle Academy</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 20rem;">
-                <img src="img/sertif4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div> <!-- penutup div yang hilang -->
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/sertif4.png">
+                    <div class="layer">
+                        <h3>Kepengurusan</h3>
+                        <p>Sertif kepengurusan sebagai anggota KPSDM dalam Himpunan Mahasiswa Sistem Informasi</p>
+                    </div>
                 </div>
-            </div>
+            </div> <!-- penutup div yang hilang -->
         </div>
     </div>
+
 
 <!-- Contact -->
     <section id="contact"> 
         <div class="container">
-            <form>
-                <h1>Contact Me Form</h1>
-                <input type="text" id="firstName" placeholder="First Name" required>
-                <input type="text" id="lastName" placeholder="Last Name" required>
-                <input type="email" id="email" placeholder="Email" required>
+            <form id="contact-form">
+                <h1>Contact <span>Form</span></h1>
+                <input type="text" id="Name" name="Name" placeholder="Name" required>
+                <input type="email" id="Email_Id" name="Email" placeholder="Email" required>
                 <h4>Type Your Message Here...</h4>
-                <textarea required></textarea>
+                <textarea name="Message" required></textarea>
                 <input type="submit" value="Send" id="button">
-            </form>
+            </form>  
+            <p id="msg"></p>
         </div>
     </section>
 
-    
 
-<!-- <footer>
-        <div class="footerContainer" id="contact">
-            <div class="socialIcons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/nabilaptrinor?igsh=MTN5Zmg0ZjhheWZhNg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
+<!-- footer -->
+    <footer>
         <div class="footerBottom">
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nabilaptrinor?igsh=MTN5Zmg0ZjhheWZhNg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
             <p>Copyright &copy;2024; Designed by <span class="designer">Nabila</span></p>
         </div>
-    </footer> -->
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="emailjs.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
